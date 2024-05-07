@@ -13,76 +13,81 @@
   <body class="bg-black text-white">
     <div class="container mx-auto flex">
       <!-- first div -->
-      <div class="w-[70%]">
-        <img class="invert w-10 mx-20 my-2" src="/img/Twitter-X-Logo.png" />
-        <div class="sidebar flex justify-center">
-          <ul class="text-2xl w-fit">
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2">home</span>Home
+      <div class="md:w-[45%] w-20 flex items-center md:items-start flex-col">
+        <img class="invert w-10 md:mx-4 my-2" src="/img/Twitter-X-Logo.png" />
+        <div class="sidebar flex flex-col justify-center md:justify-start sticky top-0">
+          <ul class="text-2xl w-12 md:w-full">
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1">home</span><span class="hidden md:block">Home</span>
             </li>
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2"> search </span
-              >Explore
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1"> search </span><span class="hidden md:block">Explore</span>
             </li>
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2">
-                Notifications </span
-              >Notifications
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1">Notifications</span><span class="hidden md:block">Notifications
             </li>
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2"> mail </span
-              >Messages
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1"> mail </span><span class="hidden md:block">Messages</span>
             </li>
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2"> list_alt </span
-              >Lists
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1"> list_alt </span><span class="hidden md:block">Lists</span>
             </li>
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2"> Bookmark </span
-              >Bookmarks
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1"> Bookmark </span><span class="hidden md:block">Bookmarks</span>
             </li>
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2"> group </span
-              >Communities
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1"> group </span><span class="hidden md:block">Communities</span>
             </li>
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2"> person </span
-              >Profile
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1"> person </span><span class="hidden md:block">Profile</span>
             </li>
-            <li
-              class="flex gap-2 font-semibold justify-start py-2 px-6 w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full"
-            >
-              <span class="material-symbols-outlined py-2 p-2"> more_vert </span
-              >More
+            <li class="flex gap-2 md:justify-start justify-center items-center py-2 md:px-3 md:w-fit hover:bg-[rgb(20,20,20)] hover:rounded-full">
+              <span class="material-symbols-outlined py-1"> More_vert </span><span class="hidden md:block">More</span>
+            </li>
+            <li class=" hidden md:block">
+              <button class="bg-blue-500 my-4 text-xl w-52 h-12 font-bold rounded-full">Post</button>
+            </li>
+            <li class="hidden md:block">
+              <div class="flex relative w-52 gap-2 p-2 m-2 rounded-full hover:bg-[rgb(20,20,20)]">
+                <div class="">
+                  <img src="/img/pic.jpg" class="w-12 rounded-full">
+                </div>
+                <div class=" text-sm flex flex-col items-center justify-center">
+                  <p class="font-bold">Vishal Pal</p>
+                  <p class="text-gray-500">@KidVishal</p>
+                </div>
+                <div class="absolute w-10 right-0 top-1 text-gray-500 text-3xl">...</div>
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <!-- second div -->
-      <div class="bg-black w-full text-white border border-x-white">
-        <div class="header relative text-gray-500 text-lg font-bold flex justify-between h-12 border-b border-b-gray-600">
-          <div class="line absolute bg-blue-500 w-16 h-1 left-[15%] bottom-0 rounded-full"></div>
-          <div class="for flex justify-center w-full items-center hover:bg-[rgb(20,20,20)]">For you</div>
-          <div class="line absolute bg-blue-500 w-[20%] h-1 right-28 bottom-0 rounded-full"></div>
-          <div class="Following flex justify-center w-full items-center hover:bg-[rgb(20,20,20)]">Following</div>
+      <div class="bg-black w-fit md:w-full text-white border border-x-gray-800">
+        <div
+          class="header relative text-gray-500 text-lg font-bold flex justify-between h-12 border-b border-b-gray-600"
+        >
+          <div
+            class="line absolute bg-blue-500 w-16 h-1 left-[17%] bottom-0 rounded-full"
+          ></div>
+          <div
+            class="for flex justify-center w-full items-center hover:bg-[rgb(20,20,20)]"
+          >
+            For you
+          </div>
+          <div
+            class="line absolute bg-blue-500 w-[14%] h-1 right-[25%] bottom-0 rounded-full"
+          ></div>
+          <div
+            class="Following flex justify-center w-full items-center hover:bg-[rgb(20,20,20)]"
+          >
+            Following
+          </div>
           <div class="setting flex justify-center w-32 items-center">
-            <span class="material-symbols-outlined text-1xl hover:bg-[rgb(20,20,20)] p-2 rounded-full">settings</span>
+            <span
+              class="material-symbols-outlined text-1xl hover:bg-[rgb(20,20,20)] p-2 rounded-full"
+              >settings</span
+            >
           </div>
         </div>
         <div class="post border-b border-b-gray-600 p-3">
@@ -92,56 +97,245 @@
             </div>
             <div class="desc border-b border-b-gray-800 w-full p-2">
               <div class="happening">
-                <input type="text" class="bg-black pl-2 pb-3 text-xl " placeholder="What is happening?!" class="" />
+                <input
+                  type="text"
+                  class="bg-black pl-2 pb-3 text-xl"
+                  placeholder="What is happening?!"
+                  class=""
+                />
               </div>
-              <div class="reply flex text-blue-500 pl-2">
+              <div class="reply flex text-blue-400 pl-2">
                 <span class="material-symbols-outlined text-xl">public</span>
                 <p class="font-semibold p-0.5 pl-1">Everyone can reply</p>
               </div>
             </div>
           </div>
           <div class="options flex justify-between p-3 pl-16">
-            <div class="icons text-blue-500 flex gap-4">
-              <span class="material-symbols-outlined text-2xl cursor-pointer"> image </span>
-              <span class="material-symbols-outlined text-2xl cursor-pointer"> gif_box </span>
-              <span class="material-symbols-outlined text-2xl cursor-pointer"> mood </span>
-              <span class="material-symbols-outlined text-2xl cursor-pointer"> location_on </span>
+            <div class="icons text-blue-400 flex gap-4">
+              <span class="material-symbols-outlined text-2xl cursor-pointer">
+                image
+       </span>
+              <span class="material-symbols-outlined text-2xl cursor-pointer">
+                gif_box
+              </span>
+              <span class="material-symbols-outlined text-2xl cursor-pointer">
+                mood
+              </span>
+              <span class="material-symbols-outlined text-2xl cursor-pointer">
+                location_on
+              </span>
             </div>
-            <button class=" bg-blue-600 w-16 h-8 rounded-full">Post</button>
+            <button class="bg-blue-500 w-16 h-8 rounded-full">Post</button>
           </div>
         </div>
-          <div class="card flex m-3">
-            <div class="py-1 w-16 h-full">
-              <img src="/img/One piece.png" class="w-12 h-12 rounded-full">
+        <div class="cards flex flex-col">
+          <div
+            class="card flex p-3 border-b border-b-gray-600 hover:bg-[rgb(8,8,8)]"
+          >
+            <div class="py-1 w-16 h-16">
+              <img src="/img/One piece.png" class="w-12 h-12 rounded-full" />
             </div>
             <div class="px-2">
               <div>
-                <span class="font-bold">Harsh Goenka</span>
-                <span class="text-gray-700">@hvgoenka . 3h</span>
+                <span class="font-bold">Straw Hats</span>
+                <span class="text-gray-700">@Emperor . 3h</span>
               </div>
               <div class="">Name any other than the most obvious...</div>
-              <div class="postimg py-3">
-                <img src="/img/One piece.png" class="w-full h-56 rounded-2xl">
+              <div class="postimg py-3 w-full">
+                <img
+                  src="/img/One piece.png"
+                  class=" h-72 border border-gray-500 rounded-2xl"
+                />
               </div>
-              <div class="like">
-                <span class="material-symbols-outlined">
-                  mode_comment
-                  </span>894
+              <div class="reach flex justify-between text-gray-600 text-[16px]">
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    mode_comment </span
+                  >7K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    repeat </span
+                  >33K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    favorite </span
+                  >157K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    bar_chart </span
+                  >35M
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    Bookmark
+                  </span>
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    upload
+                  </span>
+                </div>
               </div>
             </div>
           </div>
+          <div class="card flex p-3 border-b border-b-gray-600 hover:bg-[rgb(8,8,8)]">
+            <div class="py-1 w-16 h-16">
+              <img src="/img/one piece.jpg" class="w-12 h-12 rounded-full" />
+            </div>
+            <div class="px-2">
+              <div>
+                <span class="font-bold">Roronoa Zoro</span>
+                <span class="text-gray-700">@Zorojuro . 3h</span>
+              </div>
+              <div class="">Name any other than the most obvious...</div>
+              <div class="postimg py-3 w-full">
+                <img
+                  src="/img/one piece.jpg"
+                  class=" h-72 border border-gray-500 rounded-2xl"
+                />
+              </div>
+              <div class="reach flex justify-between text-gray-600 text-[16px]">
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    mode_comment </span
+                  >7K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    repeat </span
+                  >33K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    favorite </span
+                  >157K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    bar_chart </span
+                  >35M
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    Bookmark
+                  </span>
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    upload
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex p-3 border-b border-b-gray-600 hover:bg-[rgb(8,8,8)]">
+            <div class="py-1 w-16 h-16">
+              <img src="/img/1247503.jpeg" class="w-12 h-12 rounded-full" />
+            </div>
+            <div class="px-2">
+              <div>
+                <span class="font-bold">Chris Hemsworth</span>
+                <span class="text-gray-700">@Thor . 3h</span>
+              </div>
+              <div class="">Name any other than the most obvious...</div>
+              <div class="postimg py-3 w-full">
+                <img src="/img/1247503.jpeg" class=" h-72 border border-gray-500 rounded-2xl"/>
+              </div>
+              <div class="reach flex justify-between text-gray-600 text-[16px]">
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    mode_comment </span
+                  >7K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    repeat </span
+                  >33K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    favorite </span
+                  >157K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    bar_chart </span
+                  >35M
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    Bookmark
+                  </span>
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    upload
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card flex p-3 border-b border-b-gray-600 hover:bg-[rgb(8,8,8)]">
+            <div class="py-1 w-16 h-16">
+              <img src="/img/luffy.jpg" class="w-12 h-12 rounded-full" />
+            </div>
+            <div class="px-2">
+              <div>
+                <span class="font-bold">Monday.D.Luffy</span>
+                <span class="text-gray-700">@Mugiwara . 3h</span>
+              </div>
+              <div class="">Name any other than the most obvious...</div>
+              <div class="postimg py-3 w-full">
+                <img
+                  src="/img/luffy.jpg"
+                  class=" h-72 border border-gray-500 rounded-2xl"
+                />
+              </div>
+              <div class="reach flex justify-between text-gray-600 text-[16px]">
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    mode_comment </span
+                  >7K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    repeat </span
+                  >33K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    favorite </span
+                  >157K
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    bar_chart </span
+                  >35M
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    Bookmark
+                  </span>
+                </div>
+                <div class="like flex items-center">
+                  <span class="material-symbols-outlined text-2xl p-1">
+                    upload
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- third div -->
-      <div class="w-full text-white">
+      <div class="w-[65%] text-white hidden md:block">
         <div class="searchbar relative text-gray-400">
-          <input
-            type="text"
-            class="w-fit mx-3 bg-[rgb(20,20,20)] rounded-full h-8 m-2 px-7 text-gray-400 font-semibold"
-            placeholder="Search..."
-          />
-          <span class="material-symbols-outlined absolute left-4 top-3.5"
-            >search</span
-          >
+            <input type="text" class="w-fit mx-3 bg-[rgb(20,20,20)] rounded-full h-8 m-2 px-7 text-gray-400 font-semibold" placeholder="Search..."/>
+            <span class="material-symbols-outlined absolute left-4 top-3.5">search</span>
         </div>
         <div
           class="premium px-4 py-2 m-3 h-fit border border-gray-500 rounded-3xl"
@@ -195,7 +389,7 @@
             <div class="text-gray-500 text-sm">3,772 posts</div>
           </div>
         </div>
-        <div class="who py-2 m-3 h-fit border border-gray-500 rounded-3xl">
+        <div class="who py-2 m-3 h-fit border border-gray-500 rounded-3xl sticky top-2">
           <div class="p-3 pb-4 font-bold text-xl">Who to Follow</div>
           <div class="acc flex justify-between hover:bg-[rgb(8,8,8)] p-3">
             <div class="flex">
@@ -240,7 +434,7 @@
             </button>
           </div>
         </div>
-        <div class="footer px-5 text-sm text-gray-500 mb-10">
+        <div class="footer px-5 text-sm text-gray-500 mb-10 sticky top-[20rem]">
           <div class="terms flex">
             <div class="hover:underline">Terms of Service</div>
             &nbsp; &nbsp; &nbsp; &nbsp;
